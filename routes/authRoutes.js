@@ -4,6 +4,7 @@ import { getDB } from '../db/db.js'
 
 export const authRoutes = express.Router()
 
+// Auth route to authenticate users
 authRoutes.post('/register', async (req, res) => {
     let { name, username, password } = req.body
     name = name.trim()
